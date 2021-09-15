@@ -1,0 +1,18 @@
+//<p style="color:peru; background-color: orange;" // <p>How many kids do you have?</p>
+
+//<p style="color:green; background-color: purple;" //<p>How tall are you?</p>
+
+//<p style="color:yellow; background-color: black;" //<p>what is your dream car?</p>
+
+// let car = prompt('what is your favorte car?');
+console.log('The Users favorite car is' + car)
+
+//let height = prompt('What is your height in inches?');
+console.log('Users height is' + height)
+
+//let kids = prompt('How many kids do you have?');
+console.log('The User has' + kids + 'amount of children')
+
+//alert('Hello, ' + user + '. Welcome to your dating profile. You have ' + kids + ' children. And our records indicate
+you dream of owning a ' + car + ' . And with a height of ' + height + ' inches. You may just get the ride and the
+girl.')
