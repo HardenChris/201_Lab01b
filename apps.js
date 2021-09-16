@@ -60,7 +60,13 @@ function getRandomInt(max) {
 console.log(getRandomInt(20));
 // Generate a (random number
 
-
+for (let i = 0; i < 4; i++){
+  let userGuess = prompt('Guess a number between 1 & 20.');
+  if (userGuess === mysteryNum) {alert('That is the correct.');break;}
+  else if (userGuess > mysteryNum) {alert('Your guess was above the correct number. Guess again');}
+  else if (userGuess < mysteryNum) {alert('Your guess was below the correct number. Guess again');}
+  console.log('I hav run ' + i + 'times.');
+  
 //Track guesses left
 
 prompt('Guess a number between 1 & 20.');
