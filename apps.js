@@ -46,3 +46,46 @@ if (happyWife.toLowerCase() === 'yes' || happyWife.toLowerCase() === 'y') {
 }
 //console.log('The user answered ' + happyWife + ' to question number five.');
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+console.log(getRandomInt(20));
+// Generate a (random number
+
+
+//Track guesses left
+
+prompt('Guess a number between 1 & 20.');
+//User makes a guess
+
+
+//system verfies if number is correct
+
+
+//if number is incorrect
+
+alert('Your guess was below the correct number. Guess again');
+//inform user the number is too low
+
+alert('Your guess was above the correct number. Guess again');
+//inform user the number is to high
+
+prompt('Guess a number between 1 & 20.' );
+//user guesses again
+
+alert('That is the correct.');
+// if user is correct the loop breaks and moves on to the next question
+
+
+
+
+let i = 0;
+while (i < 3) {
+  i++;
+}
+
+for (let i = 0; i < 3; i++){
+  console.log(getRandomInt[i]);
+}
+
+let guessNumber = prompt('Guess a number out of 20.');
