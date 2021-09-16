@@ -85,7 +85,35 @@ while (i < 3) {
 }
 
 for (let i = 0; i < 3; i++){
-  console.log(getRandomInt[i]);
+  console.log('I hav run ' + i + 'times.');
 }
 
 let guessNumber = prompt('Guess a number out of 20.');
+
+
+
+
+let favCar = 'Mustang';
+
+switch (favCar) {
+case 'Mustang':
+  console.log('no');
+  break;
+case '4Runner':
+  console.log('yes');
+  break;
+case 'Escalade':
+  console.log('no');
+  break;
+case 'Camry':
+  console.log('no');
+  break;
+case 'Hellcat':
+  console.log('no');
+  break;
+case 'M3':
+  console.log('no');
+  break;
+default:
+  console.log('Not recognized');
+}
