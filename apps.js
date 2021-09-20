@@ -80,15 +80,14 @@ if (happyWife.toLowerCase() === 'yes' || happyWife.toLowerCase() === 'y') {
 //Number Guessing game w/ random # generator
 let mysteryNum = getRandomInt(10);
 for (let i = 0; i < 4; i++) {
-  let userGuess = prompt('Guess a number between 1 - 10.');
+  let userGuess = prompt('Guess a number between 0 - 10.');
   let numberOFGuesses = i;
   if (userGuess > mysteryNum.toString()) {
     alert('Your guess was above the correct number. Guess again');
   } else if (userGuess < mysteryNum.toString()) {
     alert('Your guess was below the correct number. Guess again');
   } else if (userGuess === mysteryNum.toString()) {
-    alert('That is Correct');
-    correctAnswers++;
+    isCor();
     break;
   }
   if (numberOFGuesses === 3) {
@@ -113,42 +112,16 @@ for (let i = 0; i < 6; i++) {
   if (numberOFGuesses === 5) {
     alert('You are out of guesses. The Correct answer was 4Runner');
   }
-
   const notFavCar = ['Mustang', 'Escalade', 'Camry', 'Hellcat', 'BMW M3'];
+  if (notFavCar.includes(favCar)){
+    isNCor();
+  }
+  else if (favCar === '4Runner'){
+    isCor(); break;
+  }
   console.log(notFavCar);
-  
-
-  //switch (favCar) {
-  //case 'Mustang':
-  //  alert('That is incorrect guess again.');
-  //  //console.log('no');
-  //  break;
-  //case '4Runner':
-  //  alert('That is Correct');
-  //  correctAnswers++;
-  //  console.log('yes');
-  //  break;
-  //case 'Escalade':
-  //  alert('That is incorrect guess again.');
-  //  console.log('no');
-  //  break;
-  //case 'Camry':
-  //  alert('That is incorrect guess again.');
-  //  console.log('no');
-  //  break;
-  //case 'Hellcat':
-  //  alert('That is incorrect guess again.');
-  //  console.log('no');
-  //  break;
-  //case 'BMW M3':
-  //  alert('That is incorrect guess again.');
-  //  console.log('no');
-  //  break;
-  //default:
-  //  console.log('Not recognized');
-  //  console.log('I have run ' + i + 'times.');
-  //}
 }
 
+//final results
 let finalResult = alert('Your final score is ' + correctAnswers + '/7.');
 console.log(finalResult);
